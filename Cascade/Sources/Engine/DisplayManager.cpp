@@ -18,3 +18,14 @@ DisplayManager::DisplayManager()
 	ImGui::CreateContext();
 	ImGuiSDL::Initialize(m_renderer, m_winX, m_winY);
 }
+
+void DisplayManager::ClearColor(const float & r, const float & g, const float & b, const float & a)
+{
+	SDL_SetRenderDrawColor(	m_renderer,
+							static_cast<Uint8>(r * 255.f),
+							static_cast<Uint8>(g * 255.f),
+							static_cast<Uint8>(b * 255.f),
+							static_cast<Uint8>(a * 255.f));
+
+	SDL_RenderClear(m_renderer);
+}

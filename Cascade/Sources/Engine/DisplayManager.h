@@ -16,6 +16,14 @@ public:
 	DisplayManager(DisplayManager const&) = delete;
 	void operator=(DisplayManager const&) = delete;
 
+	void ClearColor(const float & r, const float & g, const float & b, const float & a);
+
+protected:
+
+private:
+	DisplayManager();
+
+public:
 	int m_winX;
 	int m_winY;
 
@@ -24,8 +32,10 @@ public:
 	SDL_Window*		m_window;
 	SDL_Renderer*	m_renderer;
 
+protected:
+
 private:
-	DisplayManager();
+
 };
 
 #endif //!DISPLAY_MANAGER_H_

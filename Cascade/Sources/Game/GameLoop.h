@@ -8,6 +8,8 @@ public:
 	GameLoop();
 	~GameLoop();
 
+	const bool Events(void);
+
 	const int Start(void);
 };
 
