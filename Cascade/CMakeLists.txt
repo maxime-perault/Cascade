@@ -26,4 +26,4 @@ ${SDL}
 ${OPENGL}
 )
 
-target_link_libraries(Cascade opengl32.lib $(SolutionDir)Cascade/Libraries/SDL2-2.0.9/lib/x64/SDL2.lib $(SolutionDir)Cascade/Libraries/SDL2-2.0.9/lib/x64/SDL2main.lib)
+target_link_libraries(Cascade opengl32.lib $(SolutionDir)Cascade/Libraries/SDL2-2.0.9/lib/SDL2.lib $(SolutionDir)Cascade/Libraries/SDL2-2.0.9/lib/SDL2main.lib)
