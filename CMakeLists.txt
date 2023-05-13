@@ -8,7 +8,8 @@ project (Cascade)
 include_directories(Cascade
 ./Cascade/Sources
 ./Cascade/Sources/imgui
-./Cascade/Sources/imgui_sdl
+./Cascade/Sources/opengl
+./Cascade/Sources/sdl
 ./Cascade/Libraries/SDL2-2.0.9/include)
 
 # Include sub-projects.
