@@ -3,6 +3,9 @@
 #
 cmake_minimum_required (VERSION 3.8)
 
+# avoid creating the ZERO_CHECK sub-project
+set(CMAKE_SUPPRESS_REGENERATION true)
+
 project (Cascade)
 
 include_directories(Cascade
